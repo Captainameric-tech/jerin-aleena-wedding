@@ -1,34 +1,9 @@
-# Jerin & Aleena — Two Video Apple-style Website
+# Smooth Scroll Edition
 
-## Included
-- Scene 1 video
-- Scene 2 video
-- Background music
-- Pinned scroll-controlled video sections
-- Smooth text transitions
-- Wedding invitation
-- Mobile and desktop layouts
+This version uses canvas-rendered WebP frames instead of seeking inside MP4 files.
 
-## Preview locally
-Run:
+Frames:
+- Scene 1: 88
+- Scene 2: 151
 
-```bash
-python -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
-
-## GitHub Pages
-1. Create a new public repository.
-2. Upload everything inside this project folder.
-3. Open Settings → Pages.
-4. Choose Deploy from a branch.
-5. Select main and /(root).
-6. Save.
-
-The finished public URL will look like:
-`https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`
+Upload the whole folder with GitHub Desktop because it contains many frame files.

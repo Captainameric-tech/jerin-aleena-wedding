@@ -1,107 +1,45 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jerin & Aleena — 01.01.2027</title>
-  <meta name="theme-color" content="#050505">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jerin & Aleena — 01.01.2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body class="locked">
-  <div id="intro" class="intro">
-    <div class="intro__content">
-      <p class="eyebrow">A CINEMATIC WEDDING INVITATION</p>
-      <h1>Jerin <span>&</span> Aleena</h1>
-      <p class="intro__sub">Use headphones for the best experience</p>
-      <button id="beginBtn">Tap to Begin</button>
-    </div>
-  </div>
-
-  <button id="musicBtn" class="music-btn" aria-label="Toggle music">♪</button>
-
-  <main>
-    <section class="scroll-scene" data-video="assets/scene-01.mp4">
-      <div class="stage">
-        <video class="scene-video" muted playsinline preload="auto"></video>
-        <div class="veil"></div>
-        <div class="grain"></div>
-
-        <div class="copy" data-start="0.02" data-peak-in="0.08" data-peak-out="0.22" data-end="0.30">
-          <p>Every love story begins</p>
-          <h2>with a beautiful moment.</h2>
-        </div>
-
-        <div class="copy" data-start="0.28" data-peak-in="0.38" data-peak-out="0.54" data-end="0.64">
-          <p>Two hearts.</p>
-          <h2>One beautiful journey.</h2>
-        </div>
-
-        <div class="copy" data-start="0.63" data-peak-in="0.73" data-peak-out="0.91" data-end="0.99">
-          <h2>Jerin <span>&</span> Aleena</h2>
-          <p class="tracked">01 · 01 · 2027</p>
-        </div>
-
-        <div class="scene-label">01 / 02</div>
-        <div class="progress"><span></span></div>
-      </div>
-    </section>
-
-    <section class="transition">
-      <p>And now, forever begins.</p>
-    </section>
-
-    <section class="scroll-scene" data-video="assets/scene-02.mp4">
-      <div class="stage">
-        <video class="scene-video" muted playsinline preload="auto"></video>
-        <div class="veil"></div>
-        <div class="grain"></div>
-
-        <div class="copy" data-start="0.02" data-peak-in="0.08" data-peak-out="0.22" data-end="0.31">
-          <p>Together with our families,</p>
-          <h2>we invite you.</h2>
-        </div>
-
-        <div class="copy" data-start="0.30" data-peak-in="0.40" data-peak-out="0.58" data-end="0.68">
-          <p>To witness the beginning</p>
-          <h2>of our forever.</h2>
-        </div>
-
-        <div class="copy" data-start="0.66" data-peak-in="0.75" data-peak-out="0.91" data-end="0.99">
-          <h2>1 January 2027</h2>
-          <p class="tracked">KERALA · INDIA</p>
-        </div>
-
-        <div class="scene-label">02 / 02</div>
-        <div class="progress"><span></span></div>
-      </div>
-    </section>
-
-    <section class="invitation">
-      <article class="invitation__card">
-        <p class="eyebrow dark">TOGETHER WITH OUR FAMILIES</p>
-        <h2>Jerin <span>&</span> Aleena</h2>
-        <p>request the honour of your presence as we begin our journey as one.</p>
-        <div class="rule"></div>
-        <h3>1 January 2027</h3>
-        <p>Kerala, India</p>
-        <p class="closing">Your presence and blessings will make our special day truly complete.</p>
-      </article>
-    </section>
-
-    <section class="finale">
-      <h2>We can’t wait to celebrate with you.</h2>
-      <p>Some moments last a lifetime. This is one of them.</p>
-      <div class="monogram">J & A</div>
-    </section>
-  </main>
-
-  <audio id="music" loop preload="auto">
-    <source src="assets/music.mp3" type="audio/mpeg">
-  </audio>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<div id="intro" class="intro"><div class="intro__content">
+<p class="eyebrow">A CINEMATIC WEDDING INVITATION</p>
+<h1>Jerin <span>&</span> Aleena</h1>
+<p>Use headphones for the best experience</p>
+<button id="beginBtn">Tap to Begin</button>
+<p id="loadStatus" class="load-status">Loading cinematic frames…</p>
+</div></div>
+<button id="musicBtn" class="music-btn">♪</button>
+<main>
+<section class="scroll-scene" data-folder="assets/scene1" data-count="88">
+<div class="stage"><canvas class="scene-canvas"></canvas><div class="veil"></div>
+<div class="copy" data-start=".02" data-in=".08" data-out=".22" data-end=".30"><p>Every love story begins</p><h2>with a beautiful moment.</h2></div>
+<div class="copy" data-start=".28" data-in=".38" data-out=".54" data-end=".64"><p>Two hearts.</p><h2>One beautiful journey.</h2></div>
+<div class="copy" data-start=".63" data-in=".73" data-out=".91" data-end=".99"><h2>Jerin <span>&</span> Aleena</h2><p class="tracked">01 · 01 · 2027</p></div>
+<div class="progress"><span></span></div></div></section>
+<section class="transition"><p>And now, forever begins.</p></section>
+<section class="scroll-scene" data-folder="assets/scene2" data-count="151">
+<div class="stage"><canvas class="scene-canvas"></canvas><div class="veil"></div>
+<div class="copy" data-start=".02" data-in=".08" data-out=".22" data-end=".31"><p>Together with our families,</p><h2>we invite you.</h2></div>
+<div class="copy" data-start=".30" data-in=".40" data-out=".58" data-end=".68"><p>To witness the beginning</p><h2>of our forever.</h2></div>
+<div class="copy" data-start=".66" data-in=".75" data-out=".91" data-end=".99"><h2>1 January 2027</h2><p class="tracked">KERALA · INDIA</p></div>
+<div class="progress"><span></span></div></div></section>
+<section class="invitation"><article>
+<p class="eyebrow dark">TOGETHER WITH OUR FAMILIES</p>
+<h2>Jerin <span>&</span> Aleena</h2>
+<p>request the honour of your presence as we begin our journey as one.</p>
+<div class="rule"></div><h3>1 January 2027</h3><p>Kerala, India</p>
+<p class="closing">Your presence and blessings will make our special day truly complete.</p>
+</article></section>
+<section class="finale"><h2>We can’t wait to celebrate with you.</h2><p>Some moments last a lifetime. This is one of them.</p><div class="monogram">J & A</div></section>
+</main>
+<audio id="music" loop><source src="assets/music.mp3" type="audio/mpeg"></audio>
+<script src="script.js"></script>
+</body></html>
